@@ -1,0 +1,123 @@
+.header-container {
+  /* position: fixed; */
+  background-color: white; /* this one */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /* width: 100%; */
+}
+
+.header-name {
+  font-size: var(--fs-xxl);
+  margin-left: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  background-color: #f9fafc;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 350px;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.search-input::placeholder {
+  font-size: var(--fs--md);
+  font-weight: var(--fw-norm);
+  color: #a6a6a6;
+  opacity: 0.8;
+}
+
+.search-bar .icon-container {
+  background-color: #f9fafc;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.5rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  color: rgb(93, 96, 239);
+}
+
+.header-container .personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-right: 1rem; */
+}
+
+.notification {
+  color: #ffecd0;
+  background-color: #fffaf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.notification::after {
+  position: relative;
+  top: -0.5rem;
+  right: 0;
+  content: "";
+  background-color: red;
+  width: 4px;
+  height: 4px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.profile-pic {
+  width: 50px;
+  margin: 0 1.5rem;
+}
+.profile-pic img {
+  object-fit: fill;
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 3rem;
+}
+
+.profile-name {
+  font-size: var(--fs-md);
+  margin: 0 0 0.5rem 0;
+}
+
+.profile-position {
+  font-size: var(--fs-sm);
+  color: #c9cad4;
+}
+
+.arrow {
+  padding-right: 1.5rem;
+}
+
+.lan {
+  border: none;
+  background-color: #f9fafc;
+
+  font-weight: var(--fw-bold);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,115 @@
+<div class="home-container">
+  <div class="dashboard-container row-type-1">
+    <span class="dash grid4">
+      <h3 class="dash-head">Today&apos;s Sales</h3>
+      <div style="display: flex; justify-content: space-between">
+        <h5 class="dash-subhead">Sales Summary</h5>
+        <div>
+          <button class="export-button">
+            <mat-icon
+              ><span class="material-symbols-outlined">
+                ios_share
+              </span></mat-icon
+            >
+            <span>Export</span>
+          </button>
+        </div>
+      </div>
+      <div class="dash-today-container">
+        <div class="dash-today bg-red">
+          <div class="icon-container">
+            <mat-icon
+              ><span class="material-symbols-outlined">
+                signal_cellular_alt
+              </span></mat-icon
+            >
+          </div>
+          <h3>$1k</h3>
+          <p>Total Sales</p>
+          <span>+8% from yesterday</span>
+        </div>
+
+        <div class="dash-today bg-yellow">
+          <div class="icon-container">
+            <mat-icon
+              ><span class="material-symbols-outlined">
+                summarize
+              </span></mat-icon
+            >
+          </div>
+          <h3>300</h3>
+          <p>Total Order</p>
+          <span>+5% from yesterday</span>
+        </div>
+
+        <div class="dash-today bg-green">
+          <div class="icon-container">
+            <mat-icon
+              ><span class="material-symbols-outlined"> sell </span></mat-icon
+            >
+          </div>
+          <h3>5</h3>
+          <p>Product Sold</p>
+          <span>1.28% from yesterday</span>
+        </div>
+
+        <div class="dash-today bg-purple">
+          <div class="icon-container">
+            <mat-icon
+              ><span class="material-symbols-outlined">
+                person_add
+              </span></mat-icon
+            >
+          </div>
+          <h3>8</h3>
+          <p>New Customers</p>
+          <span>+0.5% from yesterday</span>
+        </div>
+      </div>
+    </span>
+    <span class="dash grid3">
+      <h3 class="dash-head">Visitor Insights</h3>
+      <div class="chart-container">
+        <div echarts [options]="option2" class="chart"></div>
+      </div>
+    </span>
+  </div>
+  <div class="dashboard-container row-type-2">
+    <span class="dash grid3">
+      <h3 class="dash-head">Total Revenue</h3>
+      <div class="chart-container">
+        <div echarts [options]="option3" class="chart"></div>
+      </div>
+    </span>
+    <span class="dash grid2">
+      <h3 class="dash-head">Customer Satisfaction</h3>
+      <div class="chart-container">
+        <div echarts [options]="option4" class="chart"></div>
+      </div>
+    </span>
+    <span class="dash grid2">
+      <h3 class="dash-head">Target vs Reality</h3>
+      <div class="chart-container">
+        <div echarts [options]="option5" class="chart"></div>
+      </div>
+    </span>
+  </div>
+  <div class="dashboard-container row-type-2">
+    <span class="dash grid3">
+      <h3 class="dash-head">Top Products</h3>
+      <app-table></app-table>
+    </span>
+    <span class="dash grid2">
+      <h3 class="dash-head">Sales Mapping by Country</h3>
+      <div class="chart-container">
+        <div echarts [options]="mapOption" class="chart"></div>
+      </div>
+    </span>
+    <span class="dash grid2">
+      <h3 class="dash-head">Volume vs Service Level</h3>
+      <div class="chart-container">
+        <div echarts [options]="option6" class="chart"></div>
+      </div>
+    </span>
+  </div>
+</div>

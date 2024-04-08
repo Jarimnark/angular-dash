@@ -1,0 +1,103 @@
+<div class="nav-container" [ngClass]="{ 'nav-close': !isNavOpen }">
+  <div class="nav-head" (click)="toggleNav()">
+    <div class="icon-container" [ngClass]="{ highlight: isNavOpen }">
+      <mat-icon><span class="material-symbols-outlined">link</span></mat-icon>
+    </div>
+    <h1 class="nav-name" *ngIf="isNavOpen">Dabang</h1>
+  </div>
+
+  <div class="nav-app">
+    <div
+      class="nav-list"
+      [ngClass]="{ highlight: checkHighlight(1) }"
+      (click)="toggleHighlight(1)"
+    >
+      <mat-icon
+        ><span class="material-symbols-outlined">pie_chart</span></mat-icon
+      >
+      <span *ngIf="isNavOpen">Dashboard</span>
+    </div>
+    <div
+      class="nav-list"
+      [ngClass]="{ highlight: checkHighlight(2) }"
+      (click)="toggleHighlight(2)"
+    >
+      <mat-icon
+        ><span class="material-symbols-outlined">bar_chart</span></mat-icon
+      >
+      <span *ngIf="isNavOpen">Leaderboard</span>
+    </div>
+    <div
+      class="nav-list"
+      [ngClass]="{ highlight: checkHighlight(3) }"
+      (click)="toggleHighlight(3)"
+    >
+      <mat-icon
+        ><span class="material-symbols-outlined">trolley</span></mat-icon
+      >
+      <span *ngIf="isNavOpen">Order</span>
+    </div>
+    <div
+      class="nav-list"
+      [ngClass]="{ highlight: checkHighlight(4) }"
+      (click)="toggleHighlight(4)"
+    >
+      <mat-icon
+        ><span class="material-symbols-outlined">shopping_bag</span></mat-icon
+      >
+      <span *ngIf="isNavOpen">Sales Product</span>
+    </div>
+    <div
+      class="nav-list"
+      [ngClass]="{ highlight: checkHighlight(5) }"
+      (click)="toggleHighlight(5)"
+    >
+      <mat-icon
+        ><span class="material-symbols-outlined">monitoring</span></mat-icon
+      >
+      <span *ngIf="isNavOpen">Sales Report</span>
+    </div>
+    <div
+      class="nav-list"
+      [ngClass]="{ highlight: checkHighlight(6) }"
+      (click)="toggleHighlight(6)"
+    >
+      <mat-icon><span class="material-symbols-outlined">chat</span></mat-icon>
+      <span *ngIf="isNavOpen">Messages</span>
+    </div>
+    <div
+      class="nav-list"
+      [ngClass]="{ highlight: checkHighlight(7) }"
+      (click)="toggleHighlight(7)"
+    >
+      <mat-icon
+        ><span class="material-symbols-outlined">settings</span></mat-icon
+      >
+      <span *ngIf="isNavOpen">Settings</span>
+    </div>
+    <div
+      class="nav-list"
+      [ngClass]="{ highlight: checkHighlight(8) }"
+      (click)="toggleHighlight(8)"
+    >
+      <mat-icon><span class="material-symbols-outlined">logout</span></mat-icon>
+      <span *ngIf="isNavOpen">Sign Out</span>
+    </div>
+  </div>
+
+  <div class="get-pro" [ngClass]="{ hidden: !isNavOpen }">
+    <div class="icon-container">
+      <mat-icon
+        ><span style="font-weight: 900" class="material-symbols-outlined"
+          >code</span
+        ></mat-icon
+      >
+    </div>
+    <h3>Dabang Pro</h3>
+    <p>
+      Get access to all <br />
+      features on tetumbas
+    </p>
+    <button class="get-pro-button">Get Pro</button>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+/* Navigation Container Styles */
+.nav-container {
+  position: fixed;
+  display: grid;
+  grid-template-rows: 20vh 45vh 35vh;
+  width: 15vw;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles applied when the navigation is closed */
+.nav-close {
+  width: 10vw;
+}
+
+/* Navigation Header Styles */
+.nav-head {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 1.5rem auto;
+}
+
+.icon-container {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.nav-name {
+  font-size: var(--fs-xl);
+}
+
+/* Navigation App Styles */
+.nav-app {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+  margin: 0 auto;
+  font-size: var(--fs-md);
+}
+
+.nav-list {
+  text-decoration: none;
+  color: #a1a2ac;
+  padding: 0.7rem 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.nav-list:hover {
+  background-color: rgb(93, 96, 239);
+  color: white;
+}
+
+.nav-list span {
+  padding-right: 1rem;
+}
+
+/* Navigation List Highlight Styles */
+.highlight {
+  background-color: rgb(93, 96, 239);
+  color: white;
+}
+
+/* Get Pro Section Styles */
+.get-pro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: ; */
+  background-color: rgb(102, 99, 234);
+  color: white;
+  width: 70%;
+  margin: 0rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+}
+
+/* .get-pro::after {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 7rem;
+  background-color: black;
+  transform: translate(5rem, -5rem);
+  object-fit: cover;
+  z-index: -1;
+} */
+
+.get-pro .icon-container {
+  background-color: white;
+  color: rgb(102, 99, 234);
+  border: none;
+  border-radius: 0.7rem;
+}
+
+.get-pro h3 {
+  margin: 0.5rem auto;
+  font-size: var(--fs-lg);
+}
+
+.get-pro p {
+  margin: 0;
+  font-size: var(--fs-sm);
+  opacity: 0.7;
+  text-align: center;
+}
+
+.get-pro button {
+  font-size: var(--fs-md);
+  background-color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1.5rem;
+  margin-top: 1.2rem;
+  color: rgb(102, 99, 234);
+  font-weight: var(--fw-bold);
+}
+
+.hidden {
+  opacity: 0;
+}

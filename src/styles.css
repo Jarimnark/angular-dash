@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font size */
+  --fs-sm: calc(0.6rem + 0.1vw);
+  --fs-md: calc(0.8rem + 0.1vw);
+  --fs-lg: calc(1rem + 0.1vw);
+  --fs-xl: calc(1.2rem + 0.1vw);
+  --fs-xxl: calc(1.3rem + 0.1vw);
+
+  /* font weight */
+  --fw-bolder: 900;
+  --fw-bold: 700;
+  --fw-norm: 500;
+  --fw-light: 400;
+}

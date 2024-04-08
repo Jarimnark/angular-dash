@@ -1,0 +1,112 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  font-size: var(--fs-sm);
+  margin-top: 1rem;
+}
+
+table tr {
+  border-bottom: 1px solid rgb(174, 174, 174);
+}
+
+table tr:last-child {
+  border: none;
+}
+
+table td {
+  padding: 1rem 0;
+  text-align: left;
+}
+
+table th {
+  padding: 0.5rem 0;
+  text-align: left;
+
+  color: rgb(214, 214, 214);
+}
+
+table span {
+  border: 1px solid;
+  border-radius: 0.4rem;
+
+  padding: 0.3rem 1rem;
+}
+
+table tbody tr .td-pop {
+  display: flex;
+  padding-right: 2rem;
+}
+/* color pallete */
+
+.line11 {
+  background-color: #21a2ff;
+  flex: 45;
+  height: 0.2rem;
+}
+
+.line12 {
+  background-color: #d8ecfe;
+  flex: 55;
+  height: 0.2rem;
+}
+
+.row1 {
+  border-color: #21a2ff;
+  color: #21a2ff;
+  background-color: #f0f9fe;
+}
+
+.line21 {
+  background-color: #15e29f;
+  flex: 29;
+  height: 0.2rem;
+}
+
+.line22 {
+  background-color: #95fbcb;
+  flex: 71;
+  height: 0.2rem;
+}
+
+.row2 {
+  border-color: #15e29f;
+  color: #15e29f;
+  background-color: #f0fdf3;
+}
+
+.line31 {
+  background-color: #a579ff;
+  flex: 18;
+  height: 0.2rem;
+}
+
+.line32 {
+  background-color: #d3befe;
+  flex: 72;
+  height: 0.2rem;
+}
+
+.row3 {
+  border-color: #a579ff;
+  color: #a579ff;
+  background-color: #fcf1ff;
+}
+
+.line41 {
+  background-color: #ffbb6b;
+  flex: 25;
+  height: 0.2rem;
+}
+
+.line42 {
+  background-color: #feefdc;
+  flex: 75;
+  height: 0.2rem;
+}
+
+.row4 {
+  border-color: #ffbb6b;
+  color: #ffbb6b;
+  background-color: #feeed5;
+}
