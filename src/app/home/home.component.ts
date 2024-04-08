@@ -271,7 +271,6 @@ export class HomeComponent implements OnInit {
     color: ['#5CBB97', '#FFCF00'],
 
     legend: {
-      // data: ['Reality Sales', 'Target Sales'],
       top: 'bottom',
       textStyle: {
         fontSize: 9,

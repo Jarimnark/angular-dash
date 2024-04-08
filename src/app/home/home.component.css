@@ -11,7 +11,6 @@
 .dashboard-container {
   display: grid;
   grid-template-columns: repeat(7, 3fr);
-  /* background-color: rgb(250, 251, 253); */
   height: 100%;
   align-items: center;
   justify-items: center;
@@ -20,13 +19,6 @@
 
   gap: 1.5rem;
 }
-
-/* .dashboard-container:first-child {
-  margin-top: 2rem;
-}
-.dashboard-container:last-child {
-  margin-bottom: 1rem;
-} */
 
 .dashboard-container .dash {
   box-sizing: border-box;
@@ -54,7 +46,7 @@
   font-size: var(--fs-lg);
   margin: 0;
 }
-/* sub head - 1 */
+
 .dash-subhead {
   font-size: var(--fs-md);
   font-weight: var(--fw-light);
@@ -87,8 +79,6 @@
 .dashboard-container .dash .chart-container {
   background-color: white;
   max-height: 40vh;
-  /* height: 100%;
-  width: 100%; */
 }
 
 .dash-today-container {
@@ -149,7 +139,7 @@
   }
 }
 
-/* color for dash-today */
+/* DASH-TODAY DESIGN */
 
 .bg-red {
   .icon-container {
@@ -177,7 +167,5 @@
 }
 
 .chart {
-  /* width: 20vw; */
   max-height: 30vh;
-  /* border: 1px solid black; */
 }
